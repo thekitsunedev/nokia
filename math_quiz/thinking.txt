@@ -1,0 +1,169 @@
+1.
+
+t_alagút = 20s    # Idő ami alatt a vonat átmegy az alagúton
+t_jelző = 5s     # Idő ami alatt a vonat a jelző alatt van
+l_alagút = 300m   # alagút hossza
+l_vonat = ?      # vonat hossza
+
+vonat sebessége
+v = l_alagút / t_alagút = 300m / 20s = 30 / 2 = 15 m/s (54km/h)
+
+l_vonat = v * t_jelző = 15 m/s * 5s = 75m
+
+-----------------------------------------------------------------
+
+2.
+
+2db 2cm oldalélű kocka
+1db 6cm oldalélű kocka
+1db 8cm oldalélű kocka
+
+Ha a három kockát összeragasztjuk úgy, hogy a 8cm oldalélű kocka egyik lapjának sarkába helyezzük a 6cm oldalélű kockát,
+mely mellé a két 2cm oldalélű kockát elhelyezzük egy szombszédos sarokba úgy, 
+hogy mind a két 2cm oldalélű kocka érinti a 6 és 8cm oldalélű kockát és egymást is,
+akkor három vágással a következő téglatest hozható össze:
+
+4cm * 10cm * 8cm.
+
+Ennek térfogata 304 köbcentiméter.
+
+Viszont ha csak a 6 és 8cm oldalélű kockát ragasztjuk össze akkor a következő testet tudjuk kivágni belőle 2 vágással:
+6cm * 6cm * 14cm.
+Ennek térfogata 408 köbcentiméter.
+
+----------------------------------------------------------------
+
+3.
+
+20km távolság kezdő és cél pont között
+Juliska kezd biciklivel
+
+Jancsi: 
+5km/h gyalog
+12km/h biciklivel 
+
+Juliska: 
+4km/h gyalog 
+10km/h biciklivel
+
+
+
+
+
+----------------------------------------------------------------
+
+4.
+
+Ha a pitagorasz tételét nézzük, melyszerint a két befogó négyzete megeggyezik at átfogó négyzetével.
+A mi esetünkben a két befogó az origótól való x és y távolság, míg az átfogó a kör sugara.
+Ez alapján meg tudjuk nézni hogy, ha a két befogó négyzete megeggyezik az átfogó négyzetével akkor az a pont a kör vonalán helyezkedik el,
+emellett, ha a két befogó egész szám akkor az a rácspont megfelel az elvártnak.
+
+sqrt(0^2 + 5^2) = 5
+sqrt(3^2 + 4^2) = 5
+sqrt(4^2 + 3^2) = 5
+
+A fenti értékek egy negyed körre vonatkoznak ezért ezeknek számát ha felszorozzunk 4-el megkapjuk a körvonalon lévő rácspontok számát,
+mely ez esetben 12.
+
+-----------------------------------------------------------------
+
+5.
+
+T = 7C
+
+A(0;4)
+B(3;0)
+C(c;6)
+
+0 < c < 3
+
+c = 2
+
+AB szakasz = sqrt(3^2 + 4^2) = 5
+AC szakasz = sqrt(2^2 * 2) = 2.828427125
+BC szakasz = sqrt(1^2 + 6^2) = 6.08276253
+
+s = (AB + AC + BC) / 2 = 6.9555948275222
+
+T = sqrt(s(s-AB)(s-AC)(s-BC)) = 7
+
+-----------------------------------------------------------------
+
+6.
+
+4-bél nem lehet több mert ha 1 embert 5-en vesznek körbe akkor biztos
+hogy az egyik nem a középpontban lévő emberre fog lőni.
+
+Feltéve hogy egy olyan pályán vannak ahol mindenki 1 síkban helyezkedik el.
+
+-----------------------------------------------------------------
+
+7.
+
+Ha van összesen 30 golyónk és abból minimum 21-et kell kihúznunk ahhoz,
+hogy biztosan legyen 1 piros golyónk, ahhoz több mint 30-21 = 9 golyónak kell lennie.
+
+Piros = 30-21 +1 = 10
+kék = 30-23 + 1 = 8
+zöld = 12
+
+-----------------------------------------------------------------
+
+8.
+
+A négyzetnek 2 átlója ezért a területet kettővel kell osztanunk hogy megkapjuk a négyzet oldalhosszát.
+
+2a = 85 / :2
+a = 42.5
+
+Itt egy olyan problémába ütközünk, hogy a 2a = 85 esetében a két átló metszéspontját kétszer számoljuk, ezért 1-et le kell vonnunk belőle
+
+2a-1 = 85 / +1
+2a = 86 / :2
+a = 43
+
+Így a nagy négyzet oldala 43cm, ezt ha négyzetre emeljük akkor megkapjuk a nagy négyzet területét, mely 1849 cm^2.
+
+----------------------------------------------------------------
+
+9.
+
+Angolok 198x "Goodbye"
+Magyarok 308x "Viszlát"
+
+1 ember köszön mindenki másnak ez M * (A + M) és A * (A + M), de mivel önmaguknak nem köszönnek ezért
+
+M * (A + M - 1)   308
+--------------- = ---
+A * (A + M - 1)   198
+
+Egyszerűsítve
+
+ M     308
+--- = ----- = 1.5555555555555556
+ A     198
+
+A: M (* 308/198)
+1: 1.5555555555555556
+2: 3.111111111111111
+3: 4.666666666666667
+4: 6.222222222222222
+5: 7.777777777777778
+6: 9.333333333333334
+7: 10.88888888888889
+8: 12.444444444444445
+9: 14
+
+ell:
+
+A * (A + M - 1) = 198
+9 * (9 + 14 - 1) = 198
+9 * 22 = 198 ✔
+
+M * (A + M - 1) = 308
+14 * (9 + 14 - 1) = 308
+14 * 22 = 308 ✔
+
+Angolok: 9
+Magyarok: 14
