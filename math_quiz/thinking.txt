@@ -112,7 +112,7 @@ zöld = 12
 
 8.
 
-A négyzetnek 2 átlója ezért a területet kettővel kell osztanunk hogy megkapjuk a négyzet oldalhosszát.
+A négyzetnek 2 átlója van, ezért a területet kettővel kell osztanunk hogy megkapjuk a négyzet oldalhosszát.
 
 2a = 85 / :2
 a = 42.5
