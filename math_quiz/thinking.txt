@@ -1,14 +1,13 @@
 1.
 
-t_alagút = 20s    # Idő ami alatt a vonat átmegy az alagúton
-t_jelző = 5s     # Idő ami alatt a vonat a jelző alatt van
-l_alagút = 300m   # alagút hossza
-l_vonat = ?      # vonat hossza
+Alagút hossza 300m.
+Alagúton áthaladás ideje 20s
+jelző alatt töltött idő 5s
 
-vonat sebessége
-v = l_alagút / t_alagút = 300m / 20s = 30 / 2 = 15 m/s (54km/h)
-
-l_vonat = v * t_jelző = 15 m/s * 5s = 75m
+Ha úgy nézzük hogy 20 másodperc a vonat orrának áthaladni az alagúton, úgy hogy a vége is kiér az alagútból, akkor
+a vonat 15 másodpercet töltött benn az alagútban, mert 1 lámpahossznyit alagúton kívül töltött.
+mivel csak 15 másodpercet volt a vonat orra az alagútban, ezért ha a jelző alatt töltött idővel osztjuk akkor megkapjuk, azt hogy
+az alagút hossza = 3 vonathosszal. így a vonat hossza 100m
 
 -----------------------------------------------------------------
 
