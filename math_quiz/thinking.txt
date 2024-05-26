@@ -17,18 +17,8 @@ az alagút hossza = 3 vonathosszal. így a vonat hossza 100m
 1db 6cm oldalélű kocka
 1db 8cm oldalélű kocka
 
-Ha a három kockát összeragasztjuk úgy, hogy a 8cm oldalélű kocka egyik lapjának sarkába helyezzük a 6cm oldalélű kockát,
-mely mellé a két 2cm oldalélű kockát elhelyezzük egy szombszédos sarokba úgy, 
-hogy mind a két 2cm oldalélű kocka érinti a 6 és 8cm oldalélű kockát és egymást is,
-akkor három vágással a következő téglatest hozható össze:
-
-4cm * 10cm * 8cm.
-
-Ennek térfogata 304 köbcentiméter.
-
-Viszont ha csak a 6 és 8cm oldalélű kockát ragasztjuk össze akkor a következő testet tudjuk kivágni belőle 2 vágással:
-6cm * 6cm * 14cm.
-Ennek térfogata 408 köbcentiméter.
+ha a 8cm-es kocka egyik lapjára ráragasztjuk a 6-os kockát, és utánna a 2 2cm-es kockát a 6-os bármelyik felületére,
+és levágjuk a 8-as lapjánál fogva, úgy hogy megmaradjon a 8-cm oldalélű kocka akkor a területünk 512-lesz.
 
 ----------------------------------------------------------------
 
@@ -46,7 +36,11 @@ Juliska:
 10km/h biciklivel
 
 
+Juliska által lebiciklizett táv = X
 
+ X     (20 - X)     X     (20 - X)
+---- + -------- = ----- + --------
+ 10       4         5        12
 
 
 ----------------------------------------------------------------
@@ -91,10 +85,7 @@ T = sqrt(s(s-AB)(s-AC)(s-BC)) = 7
 
 6.
 
-4-bél nem lehet több mert ha 1 embert 5-en vesznek körbe akkor biztos
-hogy az egyik nem a középpontban lévő emberre fog lőni.
-
-Feltéve hogy egy olyan pályán vannak ahol mindenki 1 síkban helyezkedik el.
+Nem tudom, hogy hogyan fogalmazzam meg... :/
 
 -----------------------------------------------------------------
 
