@@ -1,13 +1,26 @@
+#!/usr/bin/env python3
+"""
+This script uses the breadth-first-search algorithm to find the shortest
+path from start to finish.
+The script reads the mazes from 'input.txt' and prints out the path.
+Output format:
+mazename
+S <directions separated by spaces> G
+
+Usage: main.py
+
+Author: TheKitsuneDev (Kis Vilmos Bendegúz)
+Date: 2024.05
+Event: nokia-hackathon
+"""
 from dataclasses import dataclass
 
-"""
-This script uses the breadth-first-search algorithm to find the shortest path from start to finish.
-
-Kis Vilmos Bendegúz - TheKitsuneDev @ 2024 nokia_hackathon
-"""
 
 @dataclass
 class Tile:
+    """
+    Contains data about a tile of the maze
+    """
     x: int
     y: int
     type: str
@@ -16,12 +29,15 @@ class Tile:
 
     @property
     def xy(self) -> str:
+        """
+        Stringified version of a tile's x and y position
+        """
         return str(self.x) + str(self.y)    
 
 
 def get_neighbors(maze: list, x: int, y: int) -> list:
     """
-    Returns with a list of the neighbors of the cell given by x and y.
+    Returns with a list of the neighbors of the tile given x and y as origin
     """
     DIRECTIONS: list = ['U', 'L', 'D', 'R']
     neighbors: list = []
@@ -37,35 +53,32 @@ def get_neighbors(maze: list, x: int, y: int) -> list:
             neighbors.append(neighbor)
     return neighbors
 
-
 def solve_maze(maze: list) -> str:
     """
-    Returns with the shortest path from start to finish
+    Returns with the shortest path from start to finish using the
+    BFS algorithm
     "S # # ... G"
-    S: Start
-    U: Up
-    D: Down
-    L: Left
-    R: Right
     """
-    # Find starting cell
-    startcell: Tile = None
+    # Find starting tile
+    start_tile: Tile = None
     for y, row in enumerate(maze):
         for x, col in enumerate(row):
             if col == "S":
-                startcell: Tile = Tile(x, y, "S", "S")
+                start_tile = Tile(x, y, "S", "S")
                 break
-        if startcell:
+        
+        # Don't iterate through the rest if not required
+        if start_tile:
             break
     
+    # BFS search
     checked: list = []
-    tosearch: list = [startcell]
+    tosearch: list = [start_tile]
     while tosearch:
         selected: Tile = tosearch[0]
         checked.append(selected.xy)
         tosearch.pop(0)
 
-        neighbor: Tile
         for neighbor in get_neighbors(maze, selected.x, selected.y):
             if neighbor.xy in checked:
                 continue
@@ -75,6 +88,7 @@ def solve_maze(maze: list) -> str:
 
             neighbor.parent = selected
 
+            # Clear searchlist to quit pathfinding loop when Finish is reached
             if neighbor.type == "G":
                 selected = neighbor
                 tosearch.clear()
@@ -82,6 +96,7 @@ def solve_maze(maze: list) -> str:
 
             tosearch.append(neighbor)
     
+    # Format output
     result: str = "G"
     while selected.parent:
         result += f" {selected.direction}"
